@@ -1,0 +1,73 @@
+MainPage.module.css .container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.poster {
+  flex: 0 0 calc(33.33% - 80px); /* Adjust the width of each item */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.poster img {
+  max-width: 50%;
+  height: auto;
+}
+
+.input {
+  margin-top: 20px;
+}
+
+.form {
+  position: relative;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  z-index: 999;
+  top: 45px;
+  /* margin: 0 auto; */
+
+  background-color: white;
+  color: black;
+  width: inherit;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 45px;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+
+.list button {
+  background-color: transparent; /* Example background color */
+  color: #1f1d1d; /* Example text color */
+  border: none;
+  padding: 5px 10px; /* Adjust padding as needed */
+  cursor: pointer;
+  /* Add other styles as needed for your buttons */
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+main {
+  background-color: #1f1d1d;
+}
+
+.selected {
+  background-color: aqua;
+}
+
+.ji {
+  background-color: blue;
+}

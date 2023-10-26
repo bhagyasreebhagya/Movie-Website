@@ -1,0 +1,34 @@
+
+      {searchTerm && (
+        <ul className={style.list} ref={suggestionsContainerRef}></ul>
+        <div>
+          {searchResults.length > 0 && (
+            <div>
+              {searchResults.map((product, index) => (
+                <div
+                  key={index}
+                  style={{
+                    backgroundColor: "#5398dd",
+                    marginLeft: "1242px",
+                    fontSize: "small",
+                    color: "white",
+                    borderRadius: "3px",
+                    marginTop: "-13px",
+                    marginRight: "39px",
+                    height: "40px",
+                  }}
+                  onClick={() => navigate(`/results/${product.id}`)} // Navigate with the product's ID
+                >
+                  <p style={{ fontSize: "15px", marginLeft: "15px" }}>
+                    {product.title}
+                   
+                  </p>
+                  {/* Add other product details here */}
+                </div>
+              ))}
+            </div>
+          )}
+           </ul>
+        </div>
+       
+      )}
